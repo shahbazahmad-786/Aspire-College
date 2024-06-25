@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+    background:rgb(248 248 248);
+    padding: 0;
+    margin: 0;
+}
+.head-menu .Students-app > a{
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+ }
+main {
+    height: 100%;
+    margin-top: 70px;
+}
+
+
+/* StudentsApp-poster */
+
+#StudentsApp-poster{
+    background-image: linear-gradient(rgb(0 0 0 / 60%),rgb(0 0 0 / 73%)), url(/css/imagesCSS/edu.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 0;
+}
+#StudentsApp-poster h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(/css/imagesCSS/back.png);
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    animation: back 15s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+@media (max-width:600px) {
+    #StudentsApp-poster h1{
+        font-size: 45px;
+    }
+}
+
+/* app-boxes */
+
+#app-boxes{
+    margin-top: 100px;
+}
+#app-boxes > h1{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+#app-boxes  > h2{
+    color: crimson;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 30px 0;
+}
+#app-boxes  > h2 i{
+    color: black;
+}
+
+.app-box{
+    margin-top: 80px;
+    background: url(/css/imagesCSS/AppBack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* .app-img{
+    width: 700px;
+    width: 50%;
+} */
+.app-img img{
+    width: 100%;
+    height: 100%;
+}
+.app-text{
+    padding: 250px 75px 50px 0;
+}
+.app-text button{
+    background-color: rgb(209, 16, 16);
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    outline: 2px solid red;
+}
+.app-text button:hover{
+    background-color: rgb(255, 0, 0);
+}
+.app-text h1{
+    color:rgb(209, 16, 16) ;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.app-text p{
+    padding-top: 20px;
+    letter-spacing: .5px;
+}
+@media (max-width:1000px) {
+    .app-box{
+        margin-top: 80px;
+        background: url(/css/imagesCSS/AppBack.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: min-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .app-img{
+      margin: 0 0 0 50px;
+   }
+   .app-text{
+    padding: 20px 100px 50px 100px;
+    }
+}
+@media (max-width:375px) {
+    .app-text{
+        padding: 100px 100px 50px 100px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:1000px) {
+    .app-box{
+        margin-top: 80px;
+        background: url(/css/imagesCSS/AppBack.png);
+        background-position: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .app-img{
+        width: 60%;
+    }
+    .app-text{
+        width: 40%;
+        padding: 0 0 0 0;
+    }
+} */

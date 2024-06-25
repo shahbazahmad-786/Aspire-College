@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+    background:white;
+    padding: 0;
+    margin: 0;
+}
+.head-menu .contact > a{
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+ }
+main {
+    height: 100%;
+    margin-top: 70px;
+}
+
+
+
+/* contact-poster */
+
+#contact-poster{
+    background-image: linear-gradient(rgb(0 0 0 / 60%),rgb(0 0 0 / 73%)), url(/css/imagesCSS/edu.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 0;
+}
+#contact-poster h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(/css/imagesCSS/back.png);
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    animation: back 15s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+@media (max-width:600px) {
+    #contact-poster h1{
+        font-size: 45px;
+    }
+}
+@media (max-width:400px) {
+    #contact-poster h1{
+        font-size: 35px;
+    }
+}
+
+/* contact-info */
+
+#contact-info{
+    margin-top: 100px;
+}
+#contact-info > h1{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+#contact-info  > h2{
+    color: crimson;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 30px 0;
+}
+#contact-info > h2 i{
+    color: black;
+}
+.contact-info-boxes{
+    width: 1100px;
+    margin: 70px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: space-between;
+}
+.contact-info-box{
+    position: relative;
+}
+.contact-info-box .emty{
+    width: 100%;
+    height: 50px;
+}
+.contact-info-box .circle-box{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background-color: #c9c9c9;
+    box-shadow: 2px 2px 5px 2px gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+.contact-info-box:hover .circle-box{
+    box-shadow: 2px 2px 2px 2px rgb(204, 22, 22);
+    background-color: #e0e0e0;
+}
+.contact-info-box:hover .text-box{
+    box-shadow: 2px 2px 2px 2px rgb(204, 22, 22);
+    background-color: #e0e0e0;
+}
+.circle-box i{
+    color: rgb(204, 22, 22);
+    font-size: 50px;
+}
+.contact-info-box .text-box{
+    padding: 70px 20px 20px 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: #c9c9c9;
+    transition: all .5s;
+}
+.contact-info-box h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    word-spacing: 5px;
+}
+.contact-info-box .bar{
+    margin: 15px auto;
+    width: 85px;
+    height: 3px;
+    border-bottom: 3px solid rgb(204, 22, 22);
+}
+.contact-info-box h4{
+    text-align: center;
+}
+.contact-info-box h5{
+    text-align: center;
+    margin-top: 5px
+}
+
+@media (max-width:1150px) {
+    .contact-info-boxes{
+        width: 700px;
+        grid-template-columns: repeat(2,300px);
+    }
+    .contact-info-box3{
+        margin-top: 70px;
+    }
+}
+@media (max-width:750px) {
+    .contact-info-boxes{
+        width: 300px;
+        grid-template-columns: repeat(1,300px);
+        justify-content:center;
+    }
+    .contact-info-box2{
+        margin-top: 70px;
+    }
+}
+
+
+/* contact-form */
+
+#contact-form{
+    margin-top: 100px;
+}
+#contact-form > h1{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+#contact-form  > h2{
+    color: crimson;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 30px 0;
+}
+#contact-form > h2 i{
+    color: black;
+}
+.form-box{
+    margin-top: 70px;
+    width: 100%;
+    background-color: #c9c9c9;
+    padding: 70px 0 70px 100px;
+    position: relative;
+}
+.heading{
+    text-transform: uppercase;
+    padding: 10px 150px;
+    font-size: 30px;
+    position: absolute;
+    top: 90px;
+    left: 72px;
+    color:white;
+    background-color: rgb(204, 22, 22);
+}
+.form{
+    display: block;
+    width: 100%;
+    background-color: white;
+    padding: 100px 50px 50px 50px;
+}
+.form h6{
+    margin: 15px 0;
+    color: rgb(204, 22, 22);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.fill{
+    color: gray;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "f-name l-name"
+                         "email number"
+                         "message message";
+}
+.f-name{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    grid-area: f-name;
+}
+.l-name{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    grid-area: l-name;
+}
+.email{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    grid-area: email;
+}
+.number{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    grid-area: number;
+}
+.message{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    grid-area: message;
+}
+.fill i{
+    padding: 5px 10px;
+    border-right: 1px solid gray;
+}
+.fill input{
+    padding-left:10px ;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.chose{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 20px;
+}
+.chose label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.chose input:checked + label{
+   background-color: rgb(204, 22, 22);
+   color: white;
+   border: 1px solid rgb(204, 22, 22);
+}
+.chose input{
+    display: none;
+}
+
+.select-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+}
+.select-section input{
+    width: 100%;
+    outline: none;
+}
+select, input[type="date"]{
+    padding: 10px;
+}
+input[type="checkbox"]{
+    accent-color: rgb(204, 22, 22);
+}
+.form input[type="submit"]{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    border-radius: 3px;
+     background-color: rgb(204, 22, 22);
+     color: white;
+     border: none;
+     padding: 12px 50px;
+     box-shadow: 2px 2px 2px 2px #700000;
+}
+.form input[type="submit"]:hover{
+    background-color: rgba(204, 22, 22, 0.781);
+}
+.form input[type="submit"]:active{
+    background-color: rgba(163, 22, 22, 0.425);
+    color: black;
+}
+
+@media (max-width:800px) {
+    .form-box{
+        background-color: #c9c9c9;
+        padding: 0 0 0 0;
+    }
+    .form{
+        background-color: #c9c9c9;
+        padding:50px;
+    }
+    .form .f-name,
+    .form .l-name,
+    .form .email,
+    .form .number,
+    .form .message,
+    .chose label{
+        background-color: white;
+    }
+    .heading{
+        display: none;
+    }
+    .chose{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .chose label{
+        margin-top: 20px;
+    }
+}
+@media (max-width:500px) {
+    .fill{
+        grid-template-areas: "f-name f-name"
+                             "l-name l-name"
+                             "email email"
+                             "number number"
+                             "message message";
+    }
+    .select-section{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+}
